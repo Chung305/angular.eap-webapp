@@ -48,6 +48,10 @@ UI Ideas and code: www.codepen.io
 
 Good UI library that we are using in the EAP: www.primeng.com
 
+## Git branching description
+- `master` will only be used for code ready to release
+- `develop` will be used throughout development as a general branch
+- After first evaluation, features shall be worked on through feature branches (name: `feature/<name-of-feature>`) for readability and management
 
 
 ## Development server
