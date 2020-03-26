@@ -9,16 +9,24 @@ import { SignUpService } from 'src/app/services/sign-up.service';
 })
 export class SignUpFormComponent implements OnInit {
 
-  signUpForm : SignUp = new SignUp();
+  signUpForm: SignUp = new SignUp();
   constructor(
-    private signUpService : SignUpService
+    private signUpService: SignUpService
   ) { }
 
   ngOnInit(): void {
   }
 
-  submitSignUpForm(){
-    
+  submitSignUpForm() {
+    this.signUpForm.signedUpDate = Date();
+
+    this.signUpService.signUp(this.signUpForm)
+      .subscribe((data) => this.signUpForm == null
+      );
+    console.log(this.signUpForm);
+
+
+
   }
 
 }

@@ -7,5 +7,6 @@ export class SignUp {
     country : string;
     zipcode : string;
     type : string;
-    emailUpdate: boolean;
+    emailUpdate : boolean;
+    signedUpDate : any;
 }
