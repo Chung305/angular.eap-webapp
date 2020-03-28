@@ -8,7 +8,7 @@
     justify-content: space-between;
 }
 .icon-container{
-    width: 120px;
+    width: 160px;
 }
 ul {
    display: flex;
@@ -37,6 +37,20 @@ ul {
     margin-right: auto;
     margin-left: auto;
 }
+h4{
+    margin-bottom: 15px;
+}
+h2{
+    margin-top: 15px;
+    text-align: center;
+}
 h2, p {
     color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (min-width : 992px){
+   h2{
+       text-align: left;
+   }
+
 }
