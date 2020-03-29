@@ -28,14 +28,22 @@ ul {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding-top: 15px;
+    margin-bottom:  50px;
 }
 
 .form-display h4{
-
+    font-weight: bold;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+.form-display p {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
 }
 h4{
     margin-bottom: 15px;
