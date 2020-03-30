@@ -8,20 +8,24 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { ErrorComponent } from './components/error/error.component';
 import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.component';
 import { HttpErrorInterceptor } from '../app/services/http-error.interceptor';
+import { CountdownComponent } from './components/countdown/countdown.component';
+import { CountdownModule } from "ng2-date-countdown";
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
     ErrorComponent,
-    SignUpFormComponent
+    SignUpFormComponent,
+    CountdownComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CountdownModule
   ],
   providers: [
     {

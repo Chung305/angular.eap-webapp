@@ -1,0 +1,40 @@
+
+.count{
+    ::ng-deep{
+        .countdown{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-content: center;
+            font-family: "Sarabun", sans-serif;     
+        }
+    }
+}
+
+@media only screen and (min-width : 992px){
+    .count{
+        ::ng-deep{
+            .countdown{
+                margin-right: auto;
+                margin-left: auto;
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                align-content: center;
+                font-family: "Sarabun", sans-serif;     
+            }
+        }
+    }
+
+    .count{
+        ::ng-deep{
+            .countdown .measurements{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+        }
+    }
+ 
+ }
