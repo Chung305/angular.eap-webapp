@@ -1,4 +1,13 @@
-
+.container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+}
 .count{
     ::ng-deep{
         .countdown{
