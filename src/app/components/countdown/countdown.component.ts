@@ -16,10 +16,10 @@ export class CountdownComponent implements OnInit {
     Year: 'Year',
     Month: 'Month',
     Weeks: "Weeks",
-    Days: "D",
-    Hours: "H",
-    Minutes: "M",
-    Seconds: "S",
+    Days: "Days",
+    Hours: "Hours",
+    Minutes: "Minutes",
+    Seconds: "Seconds",
     MilliSeconds: "MilliSeconds"
   };
 
