@@ -1,0 +1,78 @@
+
+.container{
+    display: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+}
+.count{
+    ::ng-deep{
+        .countdown{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-content: center;
+            font-family: "Sarabun", sans-serif;     
+        }
+    }
+}
+
+@media only screen and (min-width : 576px){
+    .container{
+        display: block;
+    }
+
+    .count{
+        ::ng-deep{
+            .countdown .measurements-text{
+                font-weight: bold;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 992px){
+    .count{
+        ::ng-deep{
+            .countdown{
+                margin-right: auto;
+                margin-left: auto;
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                align-content: center;
+                font-family: "Sarabun", sans-serif;     
+            }
+        }
+    }
+
+    .count{
+        ::ng-deep{
+            .countdown .measurements{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    .count{
+        ::ng-deep{
+            .countdown .measurements-text{
+                padding-left: 8px;
+                
+            }
+        }
+    }
+ 
+ }

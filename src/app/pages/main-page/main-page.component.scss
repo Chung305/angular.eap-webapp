@@ -1,0 +1,64 @@
+.logo{
+    height: 40px;
+}
+#logo-social-container{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.icon-container{
+    width: 160px;
+}
+ul {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.icons {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.social-icons {
+    height: 40px;
+    width: 40px;
+}
+.form-display{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 15px;
+    margin-bottom:  50px;
+}
+
+.form-display h4{
+    font-weight: bold;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.form-display p {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+}
+h4{
+    margin-bottom: 15px;
+}
+h2{
+    margin-top: 15px;
+    text-align: center;
+}
+h2, p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (min-width : 992px){
+   h2{
+       text-align: left;
+   }
+
+}
