@@ -24,13 +24,19 @@
 
         <div class="form-group">
             <label>Country</label>
-            <input type="text" name="country" class="form-control" [(ngModel)]="signUpForm.country" #name="ngModel">
+            <select  class="form-control" name="country" [(ngModel)]="signUpForm.country" #name="ngModel" (change)="onChangeCountry($event.target.value)">
+                <option value="">Select country...</option>
+                <option *ngFor="let country of countries" [value]="country.name">{{country.name}}</option>
+              </select>
         </div>
 
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label>State/Province</label>
-                <input type="text" name="state" class="form-control" [(ngModel)]="signUpForm.state" #name="ngModel">
+                <select class="form-control"  type="text" name="state" [(ngModel)]="signUpForm.state" #name="ngModel" >
+                    <option value="">Select state...</option>
+                    <option *ngFor="let state of states">{{state}}</option>
+                  </select>
             </div>
 
             <div class="form-group col-md-6">
