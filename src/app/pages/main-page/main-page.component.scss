@@ -24,6 +24,11 @@ ul {
     height: 40px;
     width: 40px;
 }
+.countdown-display{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom:  50px;
+}
 .form-display{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -56,9 +61,4 @@ h2, p {
     color: rgba(255, 255, 255, 0.7);
 }
 
-@media only screen and (min-width : 992px){
-   h2{
-       text-align: left;
-   }
 
-}

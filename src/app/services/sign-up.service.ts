@@ -2,12 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { SignUp } from '../model/sign-up';
 import { Observable, throwError } from 'rxjs';
-import { retry, catchError } from 'rxjs/operators';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class SignUpService {
+
+  countryApi : string = "https://overseas-connection-api.herokuapp.com/"
 
   constructor(
     private http: HttpClient
@@ -23,4 +25,12 @@ export class SignUpService {
     return this.http.post<SignUp>('apiString', signUp_form, this.httpOptions)
 
   };
+
+  getCountries(){
+    return this.http.get(this.countryApi + "country/");
+  }
+
+  getStates(countryName: string){
+    return this.http.get(this.countryApi + "country/" + countryName + "/states");
+  }
 }
